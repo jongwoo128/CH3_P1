@@ -1,0 +1,74 @@
+# ============================
+# Unreal Engine .gitignore
+# ============================
+
+# Visual Studio / Rider 파일
+.vs/
+.vscode/
+*.sln
+*.suo
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+.idea/
+
+# 빌드 및 중간 산출물
+Binaries/
+Build/
+Intermediate/
+DerivedDataCache/
+Saved/
+
+# 컴파일된 클래스, 헤더 캐시
+*.pdb
+*.obj
+*.exe
+*.dll
+
+# Unreal이 자동 생성하는 폴더
+.vsconfig
+*.generated.*
+*.VC.db
+
+# 패키징 결과물
+Package/
+*.ipa
+*.apk
+
+# Plugins (직접 만든 플러그인이 아닌 서드파티/자동생성 캐시일 경우)
+Plugins/*/Binaries/
+Plugins/*/Intermediate/
+
+# 콘텐츠 쿠킹 결과물
+Saved/Cooked/
+Saved/StagedBuilds/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# 로그 파일
+*.log
+
+# 크래시 리포트
+CrashReportClient/
+
+# 소스 컨트롤 관련 캐시
+*.tps
+
+# 개인 설정 파일
+*.opensdf
+*.sdf
+*.suo
+*.VC.db
+*.pidb
+*.svclog
+*.scc
+
+# ---- 참고 ----
+# .uproject, Content/, Config/, Source/ 폴더는 반드시 커밋해야 합니다.
+# 대용량 바이너리(uasset, umap 등)를 다룰 경우 Git LFS 사용을 권장합니다.
